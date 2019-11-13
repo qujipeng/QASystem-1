@@ -35,7 +35,7 @@ class AnswerSearcher:
         final_answer = []
         if not answers:
             return ''
-        if question_type == 'disease_symptom':
+        if question_type == 'shareholder-info':
             desc = [i['n.name'] for i in answers]
             subject = answers[0]['m.name']
             final_answer = '{0}的高管包括：{1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
