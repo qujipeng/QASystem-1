@@ -38,7 +38,7 @@ class AnswerSearcher:
         if question_type == 'disease_symptom':
             desc = [i['n.name'] for i in answers]
             subject = answers[0]['m.name']
-            final_answer = '{0}的症状包括：{1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
+            final_answer = '{0}的高管包括：{1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
 
         elif question_type == 'symptom_disease':
             desc = [i['m.name'] for i in answers]
